@@ -1,0 +1,442 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fdfdfd;
+    color: #333;
+    justify-content: space-between;
+
+  }
+  
+  header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .hero {
+    background: url('https://media.istockphoto.com/id/2160043972/photo/appetizers-and-fruit-drinks-covering-outdoor-resort-table.webp?a=1&b=1&s=612x612&w=0&k=20&c=sZ9ViUd085LCHMd83IXWxy40H1pGjmhJLL0CUhOqiEM=') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+  }
+  
+  .hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    padding: 12px 25px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #c26c21;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #4d6986;
+    margin: 10px 0;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .menu {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+  .menu h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .menu-category h3 {
+    color: #ff704d;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #ff704d;
+    padding-bottom: 0.5rem;
+  }
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  .menu-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.3s;
+  }
+  .menu-card:hover {
+    transform: scale(1.05);
+  }
+  .menu-card h4 {
+    margin: 0;
+  }
+  .price {
+    color: #28a745;
+    font-weight: bold;
+  }
+  .featured {
+    background: #ffe6e0;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    border-left: 5px solid #ff704d;
+  }
+
+  .contact {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  .contact h2 {
+    text-align: center;
+    color: #a26f43;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  button {
+    display: inline-block;
+    background-color: #608fb1;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #576481;
+  }
+
+  main {
+    padding: 2rem;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .highlights {
+    padding: 60px 40px;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .highlights h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+  }
+  
+  /* GALLERY STYLING */
+.gallery {
+  padding: 40px;
+  text-align: center;
+  background-color: #faede0;
+}
+
+.gallery h2 {
+  font-size: 2rem;
+  color: #e67300;
+  margin-bottom: 30px;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.images img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Lightbox Style */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox:target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.6s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive spacing for footer */
+footer {
+  margin-top: 40px;
+}
+.lightbox .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+.lightbox .close:hover {
+  color: #f71212;
+}
+
+  .order-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border: 2px solid #ffd1b3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  .order-form input,
+  .order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .dishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .dish {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.3s;
+  }
+  
+  .dish:hover {
+    transform: translateY(-10px);
+  }
+  
+  .dish img {
+    width: 50%;
+    height: 50%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .dish h3 {
+    color: #e67e22;
+    margin-bottom: 10px;
+  }
+  
+  .about {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+  }
+  .about img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+  }
+  .about img:hover {
+    transform: scale(1.03);
+  }
+  .about-text {
+    flex: 1;
+  }
+  .about-text h2 {
+    color: #e67e22;
+    font-size: 2em;
+  }
+  .about-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  .team {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff3eb;
+  }
+  .team h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #d35400;
+  }
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .member {
+    max-width: 200px;
+  }
+  .member img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+  }
+  .member img:hover {
+    transform: scale(1.05);
+  }
+  .member h4 {
+    margin: 10px 0 5px;
+  }
+  .member p {
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+  }
+  
+  footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0%;
+  }
+  
+  .typewriter h3 {
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .05em;
+  animation: typing 5s steps(50, end), blink-caret .75s step-end infinite;
+  font-family: 'Courier New', Courier, monospace;
+  color: #d84315;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
